@@ -14,48 +14,11 @@
     <junit.version>5.6.2</junit.version>
     <maven.test.plugins.version>2.22.2</maven.test.plugins.version>
     <vavr.version>0.10.3</vavr.version>
-    <jackson.version>2.11.2</jackson.version>
     <checkerfwk.version>3.6.1</checkerfwk.version>
   </properties>
 
 
   <dependencies>
-
-    <!-- Apache commons -->
-    <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-      <version>1.15</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.11</version>
-    </dependency>
-
-    <!-- config -->
-    <dependency>
-      <groupId>com.typesafe</groupId>
-      <artifactId>config</artifactId>
-      <version>1.4.0</version>
-    </dependency>
-
-    <!-- JSON -->
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-core</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-annotations</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
 
     <!-- VAVr -->
     <dependency>
@@ -63,17 +26,7 @@
       <artifactId>vavr</artifactId>
       <version>${vavr.version}</version>
     </dependency>
-    <dependency>
-      <groupId>io.vavr</groupId>
-      <artifactId>vavr-jackson</artifactId>
-      <version>${vavr.version}</version>
-      <exclusions>
-        <exclusion>
-          <groupId>com.fasterxml.jackson.core</groupId>
-          <artifactId>*</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
+
 
     <!-- code safety -->
     <dependency>
